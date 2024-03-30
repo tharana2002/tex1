@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Website</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<style>
+	body {
+		background-image: url("img/img3.png");
+		background-position: center;
+	}
+</style>
+
+<body>
+    <!-- Header Section -->
+    <div class="header" id="home">
+        <nav id="navbar">
+            <a href="#home" class="logo">Coffee Shop <span>.</span></a>
+            <div class="links" id="nav">
+                <a href="#home">Home</a>
+                <a href="#team">About</a>
+                
+                <a href="#service">Services</a>
+               
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
+            <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
+        </nav>
+        <div class="content">
+           
+            <h1>start your day with <br>a coffee</h1>
+            <button class="btn" onclick="redirectToLogin()">Buy Now</button>
+        </div>
+    </div>
+    <!-- Header Section End -->
+
+    
+    
+    <!-- Service Section -->
+    <section class="service" id="service">
+        <h1 class="heading">Our <span>Services</span></h1>
+        <div class="container">
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-1.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Skilled baristas</h3>
+                    <p>Our team of highly trained and friendly baristas is dedicated to providing you with exceptional coffee craftsmanship. They are passionate about their craft and strive to create the perfect cup of coffee for you.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-2.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Specialty coffee menu</h3>
+                    <p>We offer a diverse menu of specialty coffee drinks to cater to all taste preferences. From classic favorites like lattes, cappuccinos, and macchiatos to unique and seasonal creations, there's something for everyone to enjoy.
+                        </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-3.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Delicious accompaniments</h3>
+                    <p>Complement your coffee with our delectable selection of pastries, sandwiches, and light bites. Each item is thoughtfully crafted to pair perfectly with our coffee offerings.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-4.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Premium coffee beans</h3>
+                    <p>We take pride in sourcing the highest quality coffee beans from renowned regions around the world. Our beans are carefully selected to ensure exceptional flavor and freshness in every cup.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-5.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Welcoming ambiance</h3>
+                    <p>Our coffee shop provides a warm and inviting atmosphere where you can relax, socialize, or work. We offer comfortable seating and free Wi-Fi, creating an ideal space for both leisure and productivity.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-img">
+                    <img src="img/menu-6.png" alt="">
+                </div>
+                <div class="service-content">
+                    <h3>Exceptional customer experience</h3>
+                    <p>We are committed to providing outstanding service and ensuring that every visit to our coffee shop is memorable. Our staff is attentive, knowledgeable, and ready to assist you in any way to make your experience enjoyable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
+
+
+
+    <!-- Team Section -->
+
+    <section class="team" id="team">
+        <h1 class="heading"> About <span>Us</span></h1>
+        
+        <div class="container">
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="img/pic1.jpg" alt="">
+                </div>
+                <div class="team-content">
+                    <h3>Arosha Dinal Liyanage</h3>
+                    <p>Register page(html file,css file)</p>
+                    <p>CEO</p>
+                    
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="img/pic2.jpg" alt="">
+                </div>
+                <div class="team-content">
+                    <h3>Tharana Deshan</h3>
+                    <p>login page(html file,css file,php file)</p>
+                    
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="img/pic3.jpg" alt="">
+                </div>
+                <div class="team-content">
+                    <h3>Prasadth Dilshan</h3>
+                    <p>About us page(html file,css file)</p>
+                   
+                </div>
+            </div>
+            <div class="team-box">
+                <div class="team-img">
+                    <img src="img/pic4.jpg" alt="">
+                </div>
+                <div class="team-content">
+                    <h3>Ahan </h3>
+                    <p>Manger</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End-->
+
+    <!-- Contact Section  -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span>Us</span></h1>
+        <p class="heading-description">We are always here for you...</p>
+        <div class="container">
+            <div class="contact-box">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Email address <br> </h2>
+                </div>
+                <div>
+                    <p>cofee@domain.com</p>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Address <br> <span>Find Us</span></h2>
+                </div>
+                <div>
+                    <p>Matara,SriLanka</p>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Call Us <br> <span>Call us anytime</span></h2>
+                </div>
+                <div>
+                    <p>012345678</p>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+
+
+        <div class="container">
+            <div class="footer-box">
+                <h3>Address</h3>
+                <p>NO : 1, Matara Main Bus Stand<br> 012345678<br></p>
+                
+
+            </div>
+            
+           
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <script src="script.js"></script>
+
+    <script>
+        function redirectToLogin() {
+        window.location.href = "login1.html";
+    }
+    </script>
+</body>
+
+</html>
